@@ -1,0 +1,178 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+.container1{
+	width:100%;
+	height:100vh;
+	background-color:orange;
+	overflow: hidden;
+}
+main{
+	width:100%;
+	height:18vh;
+
+}
+/*language*/
+.lan{
+
+}
+/*language*/
+#logo {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+}
+#logo img{
+	width:19%;
+}
+
+/*french frires*/
+.all-image{
+	width:90%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+
+}
+.head-image{
+	width:90%;
+	height:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.head-image img{
+	width:30%;
+	transition:all 10s;
+}
+#french{
+	width:45%;
+	z-index:2;
+	animation:french 3s forwards;
+	transform:translate(1400px);
+	
+
+}
+@keyframes french{
+	
+	100%{
+		transform:translate(80%,15%);
+	}
+}
+
+#drump{
+	width:20%;
+	z-index:3;
+	animation:drump 3s forwards;
+	transform:translate(130%,76%);
+	animation-delay:1s;
+	opacity:0;
+
+}
+@keyframes drump{
+	
+	100%{
+	opacity: 1;
+	}
+}
+
+
+#burger{
+	width:50%;
+	z-index: 1;
+	animation:burger 3s forwards;
+	transform:translateY(-1400px);
+
+	
+
+	
+}
+
+@keyframes burger{
+	100%{
+		transform:translate(-2%,-5%);
+	}
+}
+#cup{
+	width:50%;
+	z-index: 2;
+	animation:cup 3s forwards;
+	transform:translate(-1400px);
+
+	
+
+}
+@keyframes cup{
+	100%{
+		transform:translate(-55%,10%);
+		transition:all 10s;
+	}
+}
+/*end*/
+
+/*.slogon*/
+.slogon{
+	width:250px;
+	height:250px;
+	background-color:rgba(0,0,0,0.3);
+	color:white;
+	border-radius: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top:18%;
+	left:25%;
+
+}
+.slogon p{
+	text-align: center;
+	font-size:19px;
+}
+
+
+
+
+/*.slogon*/
+
+
+/*.container2*/
+
+.container2{
+	width:100%;
+	min-height:100vh;
+	display:grid;
+	grid-template-columns:repeat(2,40%);
+	background-color:orange;
+	justify-content:space-around;
+	align-items:center;
+	overflow:hidden;
+
+
+
+
+}
+.photo{
+	width:100%;
+	height:55vh;
+	background:url('image/chicken.jpg');
+	background-size:100%;
+	background-repeat:no-repeat;
+	border:10px solid white;
+	transform:translateX(-1000px);
+	
+}
+.content{
+	transform:translateX(1000px);
+}
+.content h1{
+	font-size:3em;
+	color:rgb(240,240,240);
+}
+.content p{
+	font-size:21px;
+}
